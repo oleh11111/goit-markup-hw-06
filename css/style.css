@@ -306,7 +306,7 @@
     width: 528px;
     min-height: 581px;
 
-    transform: translate(-50%, -50%) scale(0.8);
+    transform: translate(-50%, -50%) scale(1);
     animation-name:animate-scale;
     animation-duration: 500ms;
     animation-timing-function: var(--cubick);
@@ -329,10 +329,14 @@
 
     
   .modal-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     margin-top: 14px;
     margin-right: 14px;
-    
+    border: 1px solid transparent;
+    background-color: rgba(0, 0, 0, 0);
     top: 0;
     right: 0;
    
@@ -346,15 +350,35 @@
   color: #212121;
   }
   .modal-close{
-    width: 18px;
-    height: 18px;
-    padding: 6px;
+    width: 30px;
+    height: 30px;
+   
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50% 50%;
-    
+    }
+
+  .button-send{
+    display: flex;
+  align-items: center;
+  text-align: center;
+
+    padding-top: 10px;
+    padding-right: 55px;
+    padding-bottom: 10px;
+    padding-left: 56px;
+    height: 50px;
+
+    font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88px;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+  background-color: var(--accent-color);
+  border: 1px solid transparent;
+  border-radius: 4px;
   }
-  
-  
+
+
   .peculiarties {
     padding: 94px 0px;
   }
