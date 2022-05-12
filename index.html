@@ -447,9 +447,10 @@
         </section>
         <section class="footer-form">
           <form class="form">
-            <span>
+            
               <p class="form-text">Подпишитесь на рассылку</p>
-              <label class="footer-form-mail">
+              <div class="leveling">
+                <label class="footer-form-mail">
                 <input
                   class="input-mail"
                   type="email"
@@ -457,49 +458,61 @@
                   placeholder="E-mail"
                 />
               </label>
-            </span>
+           
 
             <button type="submit" class="button-form">
               Подписаться
               <svg class="form-icon">
                 <use href="./css/imige/icon-form.svg#telegram"></use>
               </svg>
-            </button>
+            </button></div>
           </form>
         </section>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" data-modal-close class="modal-button">
-          <svg class="modal-close">
+        <button  type="button" data-modal-close class="modal-button">
+          <svg class="modal-close" >
             <use href="./css/imige/icon-form.svg#close-black"></use>
             "
           </svg>
         </button>
-        <form>
+        <form class="modal-form">
           <p class="title-modal">Оставьте свои данные, мы вам перезвоним</p>
-          <label>
-            <span>имя</span>
-            <input type="name" name="name"/>
+          <label class="modal-item">
+            <span class="modal-item-name">имя</span>
+           <span class="input-group"> <input class="modal-input" type="name" name="name"/>
+            <span class="position-lable"><svg class="modal-icon"> 
+              <use href="./css/imige/icon-form.svg#person-black"></use>
+            </svg></span>
+          </span>
           </label>
-          <label>
-            <span>телефон</span>
-            <input type="tel" name="telephone"/>
-          </label>
-          <label>
-            <span>почта</span>
-            <input type="email" name="email"/>
-          </label>
-          <label>
-            <span>коментарий</span>
-            <textarea name="coment" id="coment" cols="30" rows="10"></textarea>
-          </label>
-          <label>
-            <input type="checkbox">
-          </label>
-          <p>Соглашаюсь с рассылкой и принимаю <span><a href="">Условия договора</a></span></p>
+          <label class="modalitem">
+            <span class="modal-item-name"> телефон</span>
+            <span class="input-group"><input class="modal-input" type="tel" name="telephone"/><span class="position-lable"><svg class="modal-icon"> 
+              <use href="./css/imige/icon-form.svg#phone-black"></use>
+            </svg>
 
+            </span>
+          </span>
+          </label>
+          <label>
+            <span class="modal-item-name">почта</span>
+            <span class="input-group"><input class="modal-input" type="email" name="email"/><span class="position-lable"><svg class="modal-icon">
+              <use href="./css/imige/icon-form.svg#email-black"></use>
+            </svg></span>
+          </span>
+          </label>
+          <label class="modalitem">
+            <span class="modal-item-name">коментарий</span>
+            <textarea class="modal-texteria" name="coment" id="coment" cols="10" rows="10" placeholder="Введите текст"></textarea>
+          </label>
+          <span class="contract">
+            <label class="modal-checkbox">
+              <input class="input-check" type="checkbox">
+            </label>
+           <span class="contract-text"> <p>Соглашаюсь с рассылкой и принимаю <span><a class="modal-link" href="">Условия договора</a></span></p></span></span>
           <button class="button-send" type="submit">Отправить</button>
         </form>
       </div>
