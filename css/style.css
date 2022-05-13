@@ -329,11 +329,11 @@
 
     
   .modal-button{
+    outline: none;
     position: absolute;
     top: 0;
     right: 0;
 
-   
     display: flex;
     align-items: center;
     justify-content: center;
@@ -346,13 +346,16 @@
     margin-right: 14px;
      background-color: var(--ccolor-withe);
     }
+   
+
+    .modal-button:hover .modal-close,
+    .modal-button:focus .modal-close{
+      fill: var(--accent-color);
+    }
     .modal-close{
       display: flex;
       width: 18px;
       height: 18px;
-    }
-    .modal-close:hover, .modal-close:focus{
-      fill: var(--accent-color);
     }
 
   
@@ -368,16 +371,11 @@
   }
   
 
-    .modal-item{ 
-     position: relative;
-    }
-
-.modal-item-name{
+.modal-input-name{
   display: block;
 
 margin-bottom:4px;
 
-font-weight: 400;
 font-size: 12px;
 line-height: 1.16;
 letter-spacing: 0.01em;
@@ -389,14 +387,32 @@ color: #757575;
 }
 
 .modal-input{
+  outline: none;
   margin-bottom: 10px;
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  padding-top: 7px;
   padding-left: 42px;
+  padding-bottom: 7px;
+  padding-right: 10px; 
 }
-.position-lable{
+
+
+
+
+
+.modal-input:hover,
+.modal-input:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.modal-input:focus ~ .modal-icon{
+  fill: var(--accent-color);
+}
+
+.modal-icon{
   position: absolute;
   top: 0;
   left: 0;
@@ -410,11 +426,18 @@ color: #757575;
   height: 18px;
 }
 
-.modal-texteria{
+.modal-texterea{
+  outline: none;
   margin-bottom: 10px;
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  padding: 10px;
+}
+
+.modal-texterea:hover,
+.modal-texterea:focus{
+  border-color: var(--accent-color);
 }
 .modal-check{
   position: relative;
@@ -1115,7 +1138,7 @@ color: #757575;
     fill: var(--ccolor-withe);
   }
   .wellcome {
-    
+    display: block;
     margin-bottom: 20px;
     color: var(--ccolor-withe);
     font-weight: 700;
