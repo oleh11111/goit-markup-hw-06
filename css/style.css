@@ -416,38 +416,53 @@ color: #757575;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
-.modal-checkbox{
-  position: absolute;
-  top: 4px;
-  margin-left: 12px;
-  margin-right: 8px;
-  width: 16px;
-  height: 15px;
-  border: 3px solid var(--secondary-text-color);
-  border-radius: 4px;
-  background-color: #ffffff;
+.modal-check{
+  position: relative;
+ margin-left: 14px;
+  margin-right: 7px;
+  
 }
 
 .input-check{
-  /* position: absolute;
+  position: absolute;
+  top: 6px;
+  
   width: 1px;
   height: 1px;
   overflow: hidden;
-  clip: rect(0 0 0 0); */
+  clip: rect(0 0 0 0);
 }
-.input-check:checked + .modal-checkbox{
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
-  background-image: url();
+
+.input-check:checked+.check-box{
+  background-image: url(../css/imige/icon-on.svg);
 }
+
+.check-box{ 
+  position: absolute;
+  top: 2px;
+  left: -16px;
+
+  width: 16px;
+  height: 15px;
+  margin-top: 2px;
+  margin-left: 14px;
+  border-radius: 4px;
+  background-image: url(../css/imige/icon-off.svg);
+  fill: #212121;
+}
+
 
 .contract{
   display: flex;
-   margin-bottom: 30px;
+   margin-bottom:30px;
 }
 
 .contract-text{
-  margin-left: 36px;
+  margin-left: 10px;
+  font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: #757575;
 }
 
  .modal-link{
@@ -455,7 +470,7 @@ color: #757575;
  }
 
 
-  .button-send{
+  .button-agreement{
     display: flex;
   align-items: center;
   text-align: center;
@@ -476,6 +491,11 @@ color: #757575;
   background-color: var(--accent-color);
   border: 1px solid transparent;
   border-radius: 4px;
+  
+  }
+  .button-agreement:hover,
+  .button-agreement:focus{
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   }
 
 
